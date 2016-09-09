@@ -25,3 +25,7 @@ Route::group(['prefix' => 'admin'], function(){
 	Route::resource('usuario','UsersController');
 
 });
+
+Route::get('api/users', function(){
+    return Datatables::eloquent(App\User::query())->make(true);
+});

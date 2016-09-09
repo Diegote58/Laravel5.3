@@ -24,5 +24,9 @@
 <script type="text/javascript" src="{{ asset('assets/js/jquery-2.2.4.js') }}"></script>
 
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="//cdn.datatables.net/1.10.11/js/jquery.dataTables.min.js"></script>
+<script src="{{URL::to('/')}}/assets/js/user.js"></script>
+  
 </body>
 </html>

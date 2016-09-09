@@ -1,5 +1,5 @@
 @extends('layouts.default')
-
+<link rel="stylesheet" href="//cdn.datatables.net/1.10.11/css/jquery.dataTables.min.css">
 @section('title','Listar Usuario')
 
 @section('content')
@@ -22,15 +22,14 @@
   
   		
   	
-	<table class="table table-striped">
+	<table class="table" id="users">
 		<thead>
 			<th>ID</th>
 			<th>Nombre</th>
 			<th>Mail</th>
 			<th>Tipo</th>
-			<th>Acción</th>
 		</thead>
-		<tbody>
+{{--<tbody>
 			@foreach($users as $us)
 
 				<tr>
@@ -52,10 +51,9 @@
 			@endforeach
 
 		</tbody>
-
+--}}		
 	</table>
-	{!! $users->render() !!}
+	
 	</div>
-
 
 @endsection
